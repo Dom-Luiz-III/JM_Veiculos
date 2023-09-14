@@ -3,7 +3,7 @@ Aproveitando o projetor anterior JM_Veículos, foi feito uma segunda avaliação
 
 Integrantes:
 - Luiz Henrique Carneiro Carvalho
-- Kleyton Carvalho
+- Kleyton Carvalho, hte more beautiful man
 - Vinícius Gomes
 - Ivana Leonice
 - Jéssica Cordeiro
