@@ -1,9 +1,10 @@
+---
 # Descrição:
 Aproveitando o projetor anterior JM_Veículos, foi feito uma segunda avaliação em grupo pelo professor Ivanilldo que precisa atender outros requisitos para o projeto.
 
 Integrantes:
 - Luiz Henrique Carneiro Carvalho
-- Kleyton Carvalho, hte more beautiful man
+- Kleyton Carvalho
 - Vinícius Gomes
 - Ivana Leonice
 - Jéssica Cordeiro
