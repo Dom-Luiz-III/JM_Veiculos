@@ -1,5 +1,5 @@
 # Descrição:
-Segunda avaliação feita pelo professor Ivanildo aproveitando o projetor anterior.
+Aproveitando o projetor anterior JM_Veículos, foi feito uma segunda avaliação em grupo pelo professor Ivanilldo que precisa atender outros requisitos para o projeto.
 
 Integrantes:
 - Luiz Henrique Carneiro Carvalho
