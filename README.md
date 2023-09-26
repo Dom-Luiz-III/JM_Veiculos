@@ -1,5 +1,6 @@
 # Descrição:
 Aproveitando o projetor anterior JM_Veículos, foi feito uma segunda avaliação em grupo pelo professor Ivanilldo que precisa atender outros requisitos para o projeto.
+Além desse, o projeto JM Veículos também será utilizado para a realização em testes de sistemas e outros requisitos pedidos pelo professor Yanes.
 
 Integrantes:
 - Luiz Henrique Carneiro Carvalho
