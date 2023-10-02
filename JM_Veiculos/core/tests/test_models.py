@@ -25,4 +25,4 @@ class CarroModelTest(TestCase):
         self.assertIsInstance(carro.leilao, bool)
         self.assertIsInstance(carro.formas_pagamento, str)
 
-# python manage.py test tests.core
+# python manage.py test core.tests
