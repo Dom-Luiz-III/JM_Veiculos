@@ -76,12 +76,13 @@
 
   <main class="container bg-body">
     <h1
-    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black !important; margin-top: 100px; margin-left: 30%;">
-    Nossas motos disponíveis</h1>
+      style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black !important; margin-top: 100px; margin-left: 30%;">
+      Nossas motos disponíveis</h1>
     <div class="container cont mx-auto text-center">
       <table class="table table-dark table-striped-columns mx-auto text-center mt-3 pt-2 pb-2">
         <thead>
           <tr>
+            <th></th>
             <th>Situação</th>
             <th>Modelos</th>
             <th>Marca</th>
@@ -97,6 +98,12 @@
         <tbody>
           {% for moto in motos %}
           <tr>
+            <td>
+              <form method="post" action="{% url 'comprar_veiculo' 'moto' moto.id %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">Comprar</button>
+              </form>
+            </td>
             <td>{{ moto.situacao }}</td>
             <td>{{ moto.modelo }}</td>
             <td>{{ moto.marca }}</td>
@@ -118,6 +125,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+
+  <div class="modal fade" id="veiculoIndisponivelModal" tabindex="-1" aria-labelledby="veiculoIndisponivelModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="veiculoIndisponivelModalLabel">Veículo Indisponível</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Este veículo está indisponível no momento.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
