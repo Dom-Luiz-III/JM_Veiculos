@@ -76,14 +76,16 @@
 
   <main class="container bg-body">
 
-  <div class="align-items-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black !important; margin-top: 100px;">
-    <h1 class="text-center">Nossos Utilitários disponíveis</h1>
-  </div>
+    <div class="align-items-center"
+      style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black !important; margin-top: 100px;">
+      <h1 class="text-center">Nossos Utilitários disponíveis</h1>
+    </div>
 
     <div class="container cont mx-auto text-center">
       <table class="table table-dark table-striped table-bordered mx-auto text-center mt-3 pt-2 pb-2">
         <thead>
           <tr>
+            <th></th>
             <th>Situação</th>
             <th>Modelos</th>
             <th>Marca</th>
@@ -97,20 +99,25 @@
           </tr>
         </thead>
         <tbody>
-          {% for utilitarios in utilitarios %}
+          {% for utilitario in utilitarios %}
           <tr>
-            <td>{{ utilitarios.situacao }}</td>
-            <td>{{ utilitarios.modelo }}</td>
-            <td>{{ utilitarios.marca }}</td>
-            <td>{{ utilitarios.ano_fabricacao }}</td>
-            <td>{{ utilitarios.estado }}</td>
-            <td>{{ utilitarios.km_rodados }}</td>
-            <td>{% if utilitarios.leilao %}Sim{% else %}Não{% endif %}</td>
-            <td>{{ utilitarios.formas_pagamento }}</td>
-            <td>{{ utilitarios.placa }}</td>
-            <td><img src="{{ utilitarios.foto.url }}" alt="{{ utilitarios.modelo }}" width="200" height="150"
+            <td>
+              <form method="post" action="{% url 'comprar_veiculo' 'utilitarios' utilitario.id %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">Comprar</button>
+              </form>
+            </td>
+            <td>{{ utilitario.situacao }}</td>
+            <td>{{ utilitario.modelo }}</td>
+            <td>{{ utilitario.marca }}</td>
+            <td>{{ utilitario.ano_fabricacao }}</td>
+            <td>{{ utilitario.estado }}</td>
+            <td>{{ utilitario.km_rodados }}</td>
+            <td>{% if utilitario.leilao %}Sim{% else %}Não{% endif %}</td>
+            <td>{{ utilitario.formas_pagamento }}</td>
+            <td>{{ utilitario.placa }}</td>
+            <td><img src="{{ utilitario.foto.url }}" alt="{{ utilitario.modelo }}" width="200" height="150"
                 style="border-radius: 20px;" /></td>
-            
           </tr>
           {% endfor %}
         </tbody>
@@ -121,6 +128,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+
+  <div class="modal fade" id="veiculoIndisponivelModal" tabindex="-1" aria-labelledby="veiculoIndisponivelModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="veiculoIndisponivelModalLabel">Veículo Indisponível</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Este veículo está indisponível no momento.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
