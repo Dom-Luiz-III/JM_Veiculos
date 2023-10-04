@@ -18,7 +18,7 @@ Integrantes:
 ---
 ## Prints do Projeto:
 
-![Web 1]([https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print1.png])
+![Web 1](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print1.png)
 
 ![Web 2]([https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.png])
 
