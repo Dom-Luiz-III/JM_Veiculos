@@ -134,7 +134,8 @@
       <div class="col-sm-3 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Maria
+            <h5 class="card-title text-center"
+              style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">⭐⭐⭐⭐⭐ <br> Maria
               Silva</h5>
             <p class="card-text">Comprei meu carro no JM Veículos e estou muito feliz! O processo foi fácil e rápido. O
               carro estava exatamente como descrito no anúncio. Recomendo a todos!</p>
@@ -144,8 +145,9 @@
       <div class="col-sm-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-              Carlos Santos</h5>
+            <h5 class="card-title text-center"
+              style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+              ⭐⭐⭐⭐ <br> Carlos Santos</h5>
             <p class="card-text">Fiquei impressionado com a variedade de carros no site JM Veículos. Encontrei o carro
               dos meus sonhos a um preço muito competitivo. A equipe de atendimento foi excelente. Valeu a pena!</p>
           </div>
@@ -154,17 +156,19 @@
       <div class="col-sm-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Ana
+            <h5 class="card-title text-center"
+              style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">⭐⭐⭐⭐ <br> Ana
               Oliveira</h5>
             <p class="card-text">Agradeço ao JM Veículos por me ajudar a encontrar o carro perfeito para minha família.
               O site é intuitivo, e a entrega foi pontual. Estou adorando meu novo carro!</p>
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 mb-5">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Pedro
+            <h5 class="card-title text-center"
+              style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">⭐⭐⭐⭐⭐ <br> Pedro
               Rocha</h5>
             <p class="card-text">Minha experiência com o JM Veículos foi incrível. Encontrei um carro em ótimas
               condições e negociei um preço justo. A transação foi tranquila, e agora estou aproveitando meu novo
@@ -172,36 +176,77 @@
           </div>
         </div>
       </div>
+
+      <a href="https://www.instagram.com/_jm_veiculos_/" target="_blank" class="btn btn-primary btn-lg mt-5"
+        style="background-color: rgb(255, 196, 0); border: none;">
+        Acesse nossa conta no Instagram e tenha mais detalhes!<img src="{% static 'images/insta.png' %}" alt="Instagram"
+          style="max-width: 70px; max-height: 70px;">
+      </a>
     </div>
 
-    {% if form.is_valid %}
-    <p>Mensagem enviada com sucesso!</p>
-    {% endif %}
-    
-    <!-- Seu formulário aqui -->
-    <form action="/contato/" method="POST">
-           <form action="/home" method="POST">
-          <div class="mb-3">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" name="nome" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-          <div class="mb-3">
-            <label for="telefone" class="form-label">Telefone</label>
-            <input type="tel" class="form-control" id="telefone" name="telefone">
-          </div>
-          <div class="mb-3">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
-          </div>
-          <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>   
-    </form>
 
+
+    <div class="d-flex justify-content-center align-items-center mb-5">
+      <div>
+        <div id="success-message" class="alert alert-success" style="display: none;">
+          Cadastro Enviado com Sucesso!
+        </div>
+
+        <!-- Formulário para adicionar um cliente novo -->
+        <div class="container-xl bg-dark text-light border rounded p-4">
+          <h2 class="text-center">Ou fale conosco!</h2>
+          <form id="contato-form" method="POST">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control col-lg-8" id="nome" name="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control col-lg-8" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input type="tel" class="form-control col-lg-8" id="telefone" name="telefone">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control col-12" id="mensagem" name="mensagem" rows="3"></textarea>
+            </div>
+            <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+
+        <!-- O 'name="csrfmiddlewaretoken' serve para proteger seu site contra ataques CSRF" -->
+
+        <!-- Comando JavaScript para enviar uma mensagem quando o cadastro estiver concluído -->
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('#contato-form').addEventListener('submit', function (e) {
+              e.preventDefault();
+
+              const formData = new FormData(this);
+
+              fetch('/contato/', {
+                method: 'POST',
+                body: formData,
+              })
+                .then(response => {
+                  if (response.ok) {
+                    document.querySelector('#success-message').style.display = 'block';
+                    document.querySelector('#contato-form').reset();
+                  } else {
+                    console.error('Erro no envio do formulário');
+                  }
+                })
+                .catch(error => {
+                  console.error('Erro no envio do formulário:', error);
+                });
+            });
+          });
+        </script>
+      </div>
+    </div>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
