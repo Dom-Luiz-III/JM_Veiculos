@@ -7,27 +7,25 @@
 Aproveitando o projetor anterior JM_Veículos, foi feito uma segunda avaliação em grupo pelo professor Ivanilldo que precisa atender outros requisitos para o projeto.
 Além desse, o projeto JM Veículos também será utilizado para a realização em testes de sistemas e outros requisitos pedidos pelo professor Yanes.
 
-Integrantes:
-- Luiz Henrique Carneiro Carvalho
-- Kleyton Carvalho
-- Vinícius Gomes
-- Ivana Leonice
-- Jéssica Cordeiro
-- Riquelme Lobo
-
 ---
 ## Prints do Projeto:
 
+Página inicial, onde é possível ver detalhes da empresa e entrar em contato:
 ![Web 1](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print1.png)
 
-![Web 2](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.png)
-
+Seções da navbar para ver veículos disponíveis:
 ![Web 3](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.5.png)
 
+Pagina onde se vê os carros que estão disponíveis no Banco de Dados da empresa, tendo a opção de comprar nele como uma simulação:
+![Web 2](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.png)
+
+Área para logar como admin:
 ![Web 4](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print3.png)
 
+Página do administrador:
 ![Web 5](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print4.png)
 
+Página onde é possível adicionar, editar e excluir carros a venda ou vendidos:
 ![Web 6](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print5.png)
 
 ---
@@ -53,3 +51,12 @@ Instale o Python pelo computador e alguma IDE para usá-lo (pode ser o PyCharm o
 - django-adminlte2
 
 Com tudo instalado, execute o comando "python manage.py runserver" na pasta "JM_Veiculos" pelo terminal python, se tudo der certo ele vai criar algo como "Starting development server at http://127.0.0.1:7000/" e com o link HTTP você consegue acessar o site.
+---
+
+# Integrantes:
+- Luiz Henrique Carneiro Carvalho
+- Kleyton Carvalho
+- Vinícius Gomes
+- Ivana Leonice
+- Jéssica Cordeiro
+- Riquelme Lobo
