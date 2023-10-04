@@ -45,3 +45,12 @@ class Utilitarios(models.Model):
 
     def __str__(self):
         return self.modelo
+    
+class Contato(models.Model):
+    nome = models.CharField(max_length=100)
+    email = models.EmailField()
+    telefone = models.CharField(max_length=15, blank=True, null=True)
+    mensagem = models.TextField()
+
+    def __str__(self):
+        return self.nome

@@ -2,11 +2,15 @@ from django.shortcuts import redirect, render
 from django.shortcuts import get_object_or_404
 
 from django.http import HttpResponse
+from django.http import HttpResponse
 from django.template import loader
+
+from core.forms import ContatoForm
 
 from .models import Carro
 from .models import Moto
 from .models import Utilitarios
+from .models import Contato
 
 from django.contrib.auth import login
 from django.shortcuts import render, redirect
@@ -73,3 +77,14 @@ def comprar_veiculo(request, veiculo_tipo, veiculo_id):
     else:
         # Aqui ele vai renderizar um pop up quando um veículo estiver indisponível usando JavaScript
         return render(request, f'{veiculo_tipo}.html', {'veiculo': veiculo, 'veiculo_indisponivel': True})
+    
+
+def contato(request):
+    if request.method == 'POST':
+        form = ContatoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponse("Mensagem enviada com sucesso. Você permanece na página index.html.")
+    else:
+        form = ContatoForm()
+    return render(request, 'index.html', {'form': form})
