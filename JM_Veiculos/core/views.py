@@ -79,12 +79,13 @@ def comprar_veiculo(request, veiculo_tipo, veiculo_id):
         return render(request, f'{veiculo_tipo}.html', {'veiculo': veiculo, 'veiculo_indisponivel': True})
     
 
+#Ação para cadastrar contatos pela página index
 def contato(request):
     if request.method == 'POST':
         form = ContatoForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponse("Mensagem enviada com sucesso. Você permanece na página index.html.")
+            return HttpResponse("Cadastro realizado!")
     else:
         form = ContatoForm()
     return render(request, 'index.html', {'form': form})

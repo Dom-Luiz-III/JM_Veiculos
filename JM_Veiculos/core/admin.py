@@ -35,8 +35,8 @@ class UtilitariosAdmin(admin.ModelAdmin):
 
 
 class ContatoAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'email', 'telefone', 'mensagem')  # Colunas a serem exibidas na lista de contatos
-    list_filter = ('nome', 'email')  # Filtros disponíveis na página de lista
+    list_display = ('nome', 'email', 'telefone', 'mensagem') 
+    list_filter = ('nome', 'email') 
 
 admin.site.register(Carro, CarroAdmin)
 admin.site.register(Moto, MotoAdmin)
