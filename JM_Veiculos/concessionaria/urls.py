@@ -25,5 +25,9 @@ urlpatterns = [
     path('', include('core.urls')),
 ]
 
+admin.AdminSite.site_header = 'Área do Administrador'
+admin.AdminSite.site_title = 'JM Veículos'
+admin.AdminSite.index_title = 'Banco de Veículos JM'
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
