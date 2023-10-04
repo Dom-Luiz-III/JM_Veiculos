@@ -10,7 +10,7 @@ Além desse, o projeto JM Veículos também será utilizado para a realização 
 ---
 # Prints do Projeto:
 
-Página inicial, onde é possível ver detalhes da empresa e entrar em contato:
+Página inicial, onde é possível ver detalhes da empresa, entrar em contato e criar um cadastro de cliente:
 
 ![Web 1](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print1.png)
 
