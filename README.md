@@ -20,15 +20,15 @@ Integrantes:
 
 ![Web 1](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print1.png)
 
-![Web 2]([https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.png])
+![Web 2](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.png)
 
-![Web 3]([https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.5.png])
+![Web 3](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.5.png)
 
-![Web 4]([https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print3.png])
+![Web 4](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print3.png)
 
-![Web 5]([https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print4.png])
+![Web 5](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print4.png)
 
-![Web 6]([https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print5.png])
+![Web 6](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print5.png)
 
 ---
 # Tecnologias que foram utilizadas
