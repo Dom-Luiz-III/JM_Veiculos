@@ -1,0 +1,40 @@
+.bg-body {
+    background-image: url('{% static "images/carro_wallpaper.jpg" %}') !important;
+    background-size: cover;
+    /* Redimensiona a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat;
+    /* Evita que a imagem seja repetida */
+    background-attachment: fixed;
+    /* Mantém o plano de fundo fixo enquanto a página rola */
+    background-color: aquamarine;
+}
+
+body {
+    background-image: url('{% static "images/carro_wallpaper.jpg" %}');
+    background-size: cover;
+    /* Redimensiona a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat;
+    /* Evita que a imagem seja repetida */
+    background-attachment: fixed;
+    /* Mantém o plano de fundo fixo enquanto a página rola */
+    background-color: aquamarine;
+}
+
+.titulo {
+    color: white !important;
+}
+
+.titulo:hover {
+    transition: 1s;
+    color: #fae900 !important;
+}
+
+.cont {
+    min-width: 400px;
+    min-height: 600px;
+    background-color: rgb(41, 41, 41);
+    margin-top: 100px;
+    display: grid;
+    align-items: center;
+    border-radius: 30px;
+}
