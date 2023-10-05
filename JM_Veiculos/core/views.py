@@ -21,14 +21,23 @@ def index(request):
     utilitarios = Utilitarios.objects.all()
 
     context = {
-        'curso': 'Programação Web com Django Framework',
-        'outro': 'Django é massa!',
         'carros': carros,
         'motos': motos,
         'utilitarios': utilitarios
     }
     return render(request, 'index.html', context)
 
+def politica(request):
+    carros = Carro.objects.all()
+    motos = Moto.objects.all()
+    utilitarios = Utilitarios.objects.all()
+
+    context = {
+        'carros': carros,
+        'motos': motos,
+        'utilitarios': utilitarios
+    }
+    return render(request, 'politica.html', context)
 
 def moto(request):
     motos = Moto.objects.filter(situacao='venda')
