@@ -16,23 +16,23 @@ Página inicial, onde é possível ver detalhes da empresa, entrar em contato e 
 
 Seções da navbar para ver veículos disponíveis:
 
-![Web 3](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.5.png)
+![Web 2](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/core/static/images/print2.5.png)
 
 Pagina onde se vê os carros que estão disponíveis no Banco de Dados da empresa, tendo a opção de comprar nele como uma simulação:
 
-![Web 2](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print2.png)
+![Web 3](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/core/static/images/print2.png)
 
 Área para logar como admin:
 
-![Web 4](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print3.png)
+![Web 4](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/core/static/images/print3.png)
 
 Página do administrador:
 
-![Web 5](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print4.png)
+![Web 5](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/core/static/images/print4.png)
 
 Página onde é possível adicionar, editar e excluir carros a venda ou vendidos:
 
-![Web 6](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/JM_Veiculos/core/static/images/print5.png)
+![Web ![Web 6](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/core/static/images/print5.png)
 
 ---
 # Tecnologias que foram utilizadas
