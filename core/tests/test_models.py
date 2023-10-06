@@ -8,7 +8,7 @@ from core.models import Utilitarios
 class CarroModelTest(TestCase):
 
     def test_tipo_de_dado(self):
-        # Cria um objeto 'utilitarios' com informações fictícias
+        # Cria um objeto 'Carro' com informações fictícias
         carro = Carro(
             modelo='Toyota Camry',
             marca='Toyota',
@@ -63,7 +63,7 @@ class CarroModelTest(TestCase):
 class MotoModelTest(TestCase):
 
     def test_tipo_de_dado(self):
-        # Cria um objeto 'utilitarios' com informações fictícias
+        # Cria um objeto 'Moto' com informações fictícias
         moto = Moto(
             modelo='Honda CBR1000RR',
             marca='Honda',
