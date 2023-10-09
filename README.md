@@ -32,7 +32,7 @@ Página do administrador:
 
 Página onde é possível adicionar, editar e excluir carros a venda ou vendidos:
 
-![Web ![Web 6](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/core/static/images/print5.png)
+![Web 6](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/core/static/images/print5.png)
 
 ---
 # Tecnologias que foram utilizadas
