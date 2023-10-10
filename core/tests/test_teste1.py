@@ -6,7 +6,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 class TestTeste1():
     def setup_method(self, method):
-        # Configure o caminho para o executável do WebDriver do Microsoft Edge
+        # Configura o caminho para o executável do WebDriver do Microsoft Edge
         self.driver = Edge(executable_path=r'C:\Users\vg160\PycharmProjects\Django\JM_Veiculos\core\tests\msedgedriver.exe')
         self.vars = {}
 
