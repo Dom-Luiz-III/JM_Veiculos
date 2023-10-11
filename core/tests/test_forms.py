@@ -1,32 +1,36 @@
-from msedge.selenium_tools import Edge, EdgeOptions
+from selenium.webdriver import Edge
+from selenium.webdriver.common.by import By
+import time
 
-# Configura o tempo limite para 10 segundos
-edge_options = EdgeOptions()
-edge_options.use_chromium = True
-edge_options.page_load_strategy = 'eager'  # Adicione esta linha para definir a estratégia de carregamento de página
+# execute isso no terminal -  python manage.py test core.tests.test_forms
 
-# Defina o tempo limite de conexão em segundos
-timeout = 10  # Você pode ajustar este valor conforme necessário
+driver = Edge()
 
-# Inicialize o driver do Microsoft Edge
-driver = Edge(executable_path=r'C:\Users\vg160\OneDrive\Área de Trabalho\msedgedriver.exe', options=edge_options)
+form_url = "http://127.0.0.1:8000/"
 
-driver.set_page_load_timeout(timeout)  # Define o tempo limite de carregamento de página
+try:
+    driver.get(form_url)
 
-driver.get('http://127.0.0.1:8000/')
-assert "JM Veiculos" in driver.title
+    user_nome = driver.find_element(By.ID, "nome")
+    user_email = driver.find_element(By.ID, "email")
+    user_tell = driver.find_element(By.ID, "telefone")
+    user_mensagem = driver.find_element(By.ID, "mensagem")
+    user_botao = driver.find_element(By.ID, "button")
 
-nome_input = driver.find_element_by_id('nome')
-email_input = driver.find_element_by_id('email')
-telefone_input = driver.find_element_by_id('telefone')
-mensagem_input = driver.find_element_by_id('mensagem')
-# como existem duas classes do botão com o mesmo nome, exige um outro tipo de comando para localizar o botão
-enviar_button = driver.find_element_by_xpath('//form[@id="contato-form"]//button[@class="btn btn-primary"]')
+    user_nome.send_keys("vinicius")
+    time.sleep(3)  # Pausa por 3 segundo
+    user_email.send_keys("vinicius@gomes.com.br")
+    time.sleep(3)  # Pausa por 3 segundo
+    user_tell.send_keys("999999-999999")
+    time.sleep(3)  # Pausa por 3 segundo
+    user_mensagem.send_keys("teste simples concluído")
+    time.sleep(3)  # Pausa por 3 segundo
+    user_botao.click()
 
-nome_input.send_keys('João da Silva')
-email_input.send_keys('joao@example.com')
-telefone_input.send_keys('40028922')
-mensagem_input.send_keys('Estou interessado neste carro. Por favor, entre em contato comigo.')
-enviar_button.click()
+    input("Pressione Enter para fechar a janela do navegador...")
 
-# pip install msedge-selenium-tools
+except Exception as e:
+    print("O teste de login falhou:", e)
+
+finally:
+    driver.quit()
