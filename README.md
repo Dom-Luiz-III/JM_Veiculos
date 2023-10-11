@@ -44,6 +44,7 @@ Página onde é possível adicionar, editar e excluir carros a venda ou vendidos
 - Bootstrap como framework Front End
 - Um pouquinho de JavaScript para detalhes do projeto
 - SQlite como linguagem de Banco de Dados
+- Selenium para teste de sistemas
 
 # Como executar:
 Instale o Python pelo computador e alguma IDE para usá-lo (pode ser o PyCharm ou VS Code), acessando o terminal Python, instale esses programas através do comando "pip install" e o nome dele:
