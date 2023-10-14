@@ -1,10 +1,19 @@
-from selenium.webdriver import Edge
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import os
+
+# Adiciona o caminho para o diretório contendo o MicrosoftWebDriver.exe
+edge_driver_path = r'C:\Windows\msedgedriver'
+
+# Adiciona o caminho ao PATH
+# ( ele vai procurar por arquivos executáveis quando você tenta executar um programa a partir do terminal ou prompt de comando)
+os.environ['PATH'] += ';' + edge_driver_path
+
 
 # execute isso no terminal -  python manage.py test core.tests.test_forms
 
-driver = Edge()
+driver = webdriver.Edge()
 
 form_url = "http://127.0.0.1:8000/"
 
@@ -26,6 +35,11 @@ try:
     user_mensagem.send_keys("teste simples concluído")
     time.sleep(3)  # Pausa por 3 segundo
     user_botao.click()
+    time.sleep(10)
+
+    # Verificar se a mensagem de sucesso está visível
+    success_message = driver.find_element(By.ID, "success-message")
+    assert "Cadastro Enviado com Sucesso!" in success_message.text
 
     input("Pressione Enter para fechar a janela do navegador...")
 
