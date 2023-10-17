@@ -1,4 +1,4 @@
-Django==4.2.4
+Django==3.2.22
 gunicorn==19.9.0
 pytz==2019.2
 sqlparse==0.4.4
