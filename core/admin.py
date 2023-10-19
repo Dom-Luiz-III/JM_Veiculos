@@ -13,7 +13,7 @@ class CarroAdmin(admin.ModelAdmin):
 
     display_foto.short_description = 'Foto'
 
-    list_filter = ('marca', 'estado')
+    list_filter = ('marca', 'situacao','estado')
 
     search_fields = ['modelo', 'marca', 'ano_fabricacao', 'estado', 'km_rodados',
                     'leilao', 'formas_pagamento', 'situacao', 'placa']
@@ -30,7 +30,7 @@ class MotoAdmin(admin.ModelAdmin):
 
     display_foto.short_description = 'Foto'
 
-    list_filter = ('marca', 'estado')
+    list_filter = ('marca', 'situacao','estado')
 
     search_fields = ['modelo', 'marca', 'ano_fabricacao', 'estado', 'km_rodados',
                     'leilao', 'formas_pagamento', 'situacao', 'placa']
@@ -47,7 +47,7 @@ class UtilitariosAdmin(admin.ModelAdmin):
 
     display_foto.short_description = 'Foto'
 
-    list_filter = ('marca', 'estado')
+    list_filter = ('marca', 'situacao','estado')
 
     search_fields = ['modelo', 'marca', 'ano_fabricacao', 'estado', 'km_rodados',
                     'leilao', 'formas_pagamento', 'situacao', 'placa']
