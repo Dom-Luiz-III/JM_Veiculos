@@ -1,5 +1,5 @@
 # Projeto de Website Completo: JM Veículos
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/LICENSE) 
 
 
 ---
