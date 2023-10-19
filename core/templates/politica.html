@@ -3,207 +3,206 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/index_style.css' %}">
-    <link rel="icon" href="{% static 'images/logo.ico' %}" type="image/x-icon">
-    <title>JM Veiculos - Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/index_style.css' %}">
+  <link rel="icon" href="{% static 'images/logo.ico' %}" type="image/x-icon">
+  <title>JM Veiculos - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-              aria-controls="offcanvasDarkNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-              aria-labelledby="offcanvasDarkNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nossos Veículos</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                  aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="carro">Carros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="moto">Motos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="utilitarios">Utilitários</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Sobre o projeto
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="#">Curso Técnico SENAI 2023</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="">Equipe:</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Luiz
-                          Henrique Carneiro</a></li>
-                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Kleyton
-                          Carvalho</a></li>
-                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Vinícius
-                          Gomes</a></li>
-                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Ivana
-                          Leonice</a></li>
-                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Jéssica
-                          Cordeiro</a></li>
-                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Riquelme
-                          Lobo</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link disabled text-bg-dark" style="margin-top: -25%; margin-left: 12px;">Veículos</a>
-            </li>
-    
-            <a class="navbar-brand mx-auto titulo" href="home">
-              <img src="{% static 'images/JM.png' %}" style="border-radius: 50px;" alt="Logo" width="40" height="35"
-                class="d-inline-block align-text-top text-bg-dark ">
-              Veículos
-            </a>
-    
-            <li class="nav-item text-center">
-              <a class="nav-link text-bg-dark titulo" style="margin-top: -12%;" aria-current="page" href="admin">Área do
-                Administrador</a>
-            </li>
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nossos Veículos</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-        </nav>
-      </header>
-
-    <main style="margin-top: 100px; margin-bottom: 30px; border-radius: 30px;">
-        <div class="container border border-info rounded">
-            <h2><span style="color: rgb(68, 68, 68);">Política Privacidade</span></h2>
-            <p><span style="color: rgb(68, 68, 68);">A sua privacidade é importante para nós. É política do JM Veículos
-                    respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <a
-                        href="home">JM Veículos</a>, e outros sites que possuímos e operamos.</span></p>
-            <p><span style="color: rgb(68, 68, 68);">Solicitamos informações pessoais apenas quando realmente precisamos
-                    delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e
-                    consentimento. Também informamos por que estamos coletando e como será usado.</span></p>
-            <p><span style="color: rgb(68, 68, 68);">Apenas retemos as informações coletadas pelo tempo necessário para
-                    fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente
-                    aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não
-                    autorizados.</span></p>
-            <p><span style="color: rgb(68, 68, 68);">Não compartilhamos informações de identificação pessoal
-                    publicamente ou
-                    com terceiros, exceto quando exigido por lei.</span></p>
-            <p><span style="color: rgb(68, 68, 68);">O nosso site pode ter links para sites externos que não são
-                    operados
-                    por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não
-                    podemos
-                    aceitar responsabilidade por suas respectivas&nbsp;</span><a href="https://politicaprivacidade.com/"
-                    rel="noopener noreferrer" target="_blank"
-                    style="background-color: transparent; color: rgb(68, 68, 68);">políticas de privacidade</a><span
-                    style="color: rgb(68, 68, 68);">.</span></p>
-            <p><span style="color: rgb(68, 68, 68);">Você é livre para recusar a nossa solicitação de informações
-                    pessoais,
-                    entendendo que talvez não possamos fornecer alguns dos serviços desejados.</span></p>
-            <p><span style="color: rgb(68, 68, 68);">O uso continuado de nosso site será considerado como aceitação de
-                    nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre
-                    como
-                    lidamos com dados do usuário e informações pessoais, entre em contacto connosco.</span></p>
-            <p><span style="color: rgb(68, 68, 68);">
-                    <ul>
-                        <li><span style="color: rgb(68, 68, 68);">O serviço Google AdSense que usamos para veicular
-                                publicidade usa um cookie DoubleClick para veicular anúncios mais relevantes em toda a
-                                Web e
-                                limitar o número de vezes que um determinado anúncio é exibido para você.</span></li>
-                        <li><span style="color: rgb(68, 68, 68);">Para mais informações sobre o Google AdSense, consulte
-                                as
-                                FAQs oficiais sobre privacidade do Google AdSense.</span></li>
-                        <li><span style="color: rgb(68, 68, 68);">Utilizamos anúncios para compensar os custos de
-                                funcionamento deste site e fornecer financiamento para futuros desenvolvimentos. Os
-                                cookies
-                                de publicidade comportamental usados ​​por este site foram projetados para garantir que
-                                você
-                                forneça os anúncios mais relevantes sempre que possível, rastreando anonimamente seus
-                                interesses e apresentando coisas semelhantes que possam ser do seu interesse.</span>
-                        </li>
-                        <li><span style="color: rgb(68, 68, 68);">Vários parceiros anunciam em nosso nome e os cookies
-                                de
-                                rastreamento de afiliados simplesmente nos permitem ver se nossos clientes acessaram o
-                                site
-                                através de um dos sites de nossos parceiros, para que possamos creditá-los adequadamente
-                                e,
-                                quando aplicável, permitir que nossos parceiros afiliados ofereçam qualquer promoção que
-                                pode fornecê-lo para fazer uma compra.</span></li>
-                    </ul>
-                    <p><br></p>
-                </span></p>
-            <h3><span style="color: rgb(68, 68, 68);">Compromisso do Usuário</span></h3>
-            <p><span style="color: rgb(68, 68, 68);">O usuário se compromete a fazer uso adequado dos conteúdos e da
-                    informação que o JM Veículos oferece no site e com caráter enunciativo, mas não limitativo:</span>
-            </p>
-            <ul>
-                <li><span style="color: rgb(68, 68, 68);">A) Não se envolver em atividades que sejam ilegais ou
-                        contrárias à
-                        boa fé a à ordem pública;</span></li>
-                <li><span style="color: rgb(68, 68, 68);">B) Não difundir propaganda ou conteúdo de natureza racista,
-                        xenofóbica, jogos de sorte ou azar, qualquer tipo de pornografia ilegal, de apologia ao
-                        terrorismo
-                        ou contra os direitos humanos;</span></li>
-                <li><span style="color: rgb(68, 68, 68);">C) Não causar danos aos sistemas físicos (hardwares) e lógicos
-                        (softwares) do JM Veículos, de seus fornecedores ou terceiros, para introduzir ou disseminar
-                        vírus
-                        informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar
-                        danos
-                        anteriormente mencionados.</span></li>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="carro">Carros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="moto">Motos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="utilitarios">Utilitários</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sobre o projeto
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item subtitle_nav_style" href="#">Curso Técnico SENAI 2023</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item subtitle_nav_style" href="#">Equipe:</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Luiz
+                      Henrique Carneiro</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Kleyton
+                      Carvalho</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/vinicius-gomes-47b251229/">Vinicius
+                      Gomes</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Ivana
+                      Leonice</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Jéssica
+                      Cordeiro</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/luizhenriqueccarvalho/">Riquelme
+                      Lobo</a></li>
+                </ul>
+              </li>
             </ul>
-            <h3><span style="color: rgb(68, 68, 68);">Mais informações</span></h3>
-            <p><span style="color: rgb(68, 68, 68);">Esperemos que esteja esclarecido e, como mencionado anteriormente,
-                    se
-                    houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies
-                    ativados, caso interaja com um dos recursos que você usa em nosso site.</span></p>
-            <p><span style="color: rgb(68, 68, 68);">Esta política é efetiva a partir de&nbsp;5 October 2023
-                    12:01</span>
-            </p>
+          </div>
         </div>
-    </main>
+        <li class="nav-item">
+          <a class="nav-link disabled text-bg-dark" style="margin-top: -25%; margin-left: 12px;">Veículos</a>
+        </li>
 
-    <footer class="container-fluid bg-dark text-white text-center py-3">
-        <div class="container">
-            <span class="d-block mb-1">
-                <strong>JM Veículos</strong>
-                <small>A sua concessionária de confiança</small>
-            </span>
-            <ul class="list-unstyled d-flex justify-content-center">
-                <li class="me-3">
-                    <a href="home">Sobre</a>
-                </li>
-                <li class="me-3" target="_blank">
-                    <a
-                        href="https://api.whatsapp.com/send/?phone=54996732928&text&type=phone_number&app_absent=0">Contato</a>
-                </li>
-                <li class="me-3">
-                    <a href="home">Politica de privacidade</a>
-                </li>
-                <li class="me-3" target="_blank">
-                    <a href="https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/LICENSE">Termos de
-                        uso</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+        <a class="navbar-brand mx-auto titulo" href="home">
+          <img src="{% static 'images/JM.png' %}" style="border-radius: 50px;" alt="Logo" width="40" height="35"
+            class="d-inline-block align-text-top text-bg-dark ">
+          Veículos
+        </a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+        <li class="nav-item text-center">
+          <a class="nav-link text-bg-dark titulo" style="margin-top: -12%;" aria-current="page" href="admin">Área do
+            Administrador</a>
+        </li>
+      </div>
+    </nav>
+  </header>
+
+  <main style="margin-top: 100px; margin-bottom: 30px; border-radius: 30px;">
+    <div class="container border border-info rounded">
+      <h2><span style="color: rgb(68, 68, 68);">Política Privacidade</span></h2>
+      <p><span style="color: rgb(68, 68, 68);">A sua privacidade é importante para nós. É política do JM Veículos
+          respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <a
+            href="home">JM Veículos</a>, e outros sites que possuímos e operamos.</span></p>
+      <p><span style="color: rgb(68, 68, 68);">Solicitamos informações pessoais apenas quando realmente precisamos
+          delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e
+          consentimento. Também informamos por que estamos coletando e como será usado.</span></p>
+      <p><span style="color: rgb(68, 68, 68);">Apenas retemos as informações coletadas pelo tempo necessário para
+          fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente
+          aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não
+          autorizados.</span></p>
+      <p><span style="color: rgb(68, 68, 68);">Não compartilhamos informações de identificação pessoal
+          publicamente ou
+          com terceiros, exceto quando exigido por lei.</span></p>
+      <p><span style="color: rgb(68, 68, 68);">O nosso site pode ter links para sites externos que não são
+          operados
+          por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não
+          podemos
+          aceitar responsabilidade por suas respectivas&nbsp;</span><a href="https://politicaprivacidade.com/"
+          rel="noopener noreferrer" target="_blank"
+          style="background-color: transparent; color: rgb(68, 68, 68);">políticas de privacidade</a><span
+          style="color: rgb(68, 68, 68);">.</span></p>
+      <p><span style="color: rgb(68, 68, 68);">Você é livre para recusar a nossa solicitação de informações
+          pessoais,
+          entendendo que talvez não possamos fornecer alguns dos serviços desejados.</span></p>
+      <p><span style="color: rgb(68, 68, 68);">O uso continuado de nosso site será considerado como aceitação de
+          nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre
+          como
+          lidamos com dados do usuário e informações pessoais, entre em contacto connosco.</span></p>
+      <p><span style="color: rgb(68, 68, 68);">
+          <ul>
+            <li><span style="color: rgb(68, 68, 68);">O serviço Google AdSense que usamos para veicular
+                publicidade usa um cookie DoubleClick para veicular anúncios mais relevantes em toda a
+                Web e
+                limitar o número de vezes que um determinado anúncio é exibido para você.</span></li>
+            <li><span style="color: rgb(68, 68, 68);">Para mais informações sobre o Google AdSense, consulte
+                as
+                FAQs oficiais sobre privacidade do Google AdSense.</span></li>
+            <li><span style="color: rgb(68, 68, 68);">Utilizamos anúncios para compensar os custos de
+                funcionamento deste site e fornecer financiamento para futuros desenvolvimentos. Os
+                cookies
+                de publicidade comportamental usados ​​por este site foram projetados para garantir que
+                você
+                forneça os anúncios mais relevantes sempre que possível, rastreando anonimamente seus
+                interesses e apresentando coisas semelhantes que possam ser do seu interesse.</span>
+            </li>
+            <li><span style="color: rgb(68, 68, 68);">Vários parceiros anunciam em nosso nome e os cookies
+                de
+                rastreamento de afiliados simplesmente nos permitem ver se nossos clientes acessaram o
+                site
+                através de um dos sites de nossos parceiros, para que possamos creditá-los adequadamente
+                e,
+                quando aplicável, permitir que nossos parceiros afiliados ofereçam qualquer promoção que
+                pode fornecê-lo para fazer uma compra.</span></li>
+          </ul>
+          <p><br></p>
+        </span></p>
+      <h3><span style="color: rgb(68, 68, 68);">Compromisso do Usuário</span></h3>
+      <p><span style="color: rgb(68, 68, 68);">O usuário se compromete a fazer uso adequado dos conteúdos e da
+          informação que o JM Veículos oferece no site e com caráter enunciativo, mas não limitativo:</span>
+      </p>
+      <ul>
+        <li><span style="color: rgb(68, 68, 68);">A) Não se envolver em atividades que sejam ilegais ou
+            contrárias à
+            boa fé a à ordem pública;</span></li>
+        <li><span style="color: rgb(68, 68, 68);">B) Não difundir propaganda ou conteúdo de natureza racista,
+            xenofóbica, jogos de sorte ou azar, qualquer tipo de pornografia ilegal, de apologia ao
+            terrorismo
+            ou contra os direitos humanos;</span></li>
+        <li><span style="color: rgb(68, 68, 68);">C) Não causar danos aos sistemas físicos (hardwares) e lógicos
+            (softwares) do JM Veículos, de seus fornecedores ou terceiros, para introduzir ou disseminar
+            vírus
+            informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar
+            danos
+            anteriormente mencionados.</span></li>
+      </ul>
+      <h3><span style="color: rgb(68, 68, 68);">Mais informações</span></h3>
+      <p><span style="color: rgb(68, 68, 68);">Esperemos que esteja esclarecido e, como mencionado anteriormente,
+          se
+          houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies
+          ativados, caso interaja com um dos recursos que você usa em nosso site.</span></p>
+      <p><span style="color: rgb(68, 68, 68);">Esta política é efetiva a partir de&nbsp;5 October 2023
+          12:01</span>
+      </p>
+    </div>
+  </main>
+
+  <footer class="container-fluid bg-dark text-white text-center py-3">
+    <div class="container">
+      <span class="d-block mb-1">
+        <strong>JM Veículos</strong>
+        <small>A sua concessionária de confiança</small>
+      </span>
+      <ul class="list-unstyled d-flex justify-content-center">
+        <li class="me-3">
+          <a href="home">Sobre</a>
+        </li>
+        <li class="me-3" target="_blank">
+          <a href="https://api.whatsapp.com/send/?phone=54996732928&text&type=phone_number&app_absent=0">Contato</a>
+        </li>
+        <li class="me-3">
+          <a href="home">Politica de privacidade</a>
+        </li>
+        <li class="me-3" target="_blank">
+          <a href="https://github.com/Dom-Luiz-III/Concessionaria_Website_2.0/blob/main/LICENSE">Termos de
+            uso</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
