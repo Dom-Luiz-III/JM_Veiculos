@@ -1,0 +1,22 @@
+.titulo {
+    color: white !important;
+}
+
+.titulo:hover {
+    transition: 1s;
+    color: #fae900 !important;
+}
+
+.cont {
+    min-width: 400px;
+    min-height: 600px;
+    background-color: rgb(41, 41, 41);
+    margin-top: 100px;
+    display: grid;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.subtitle_nav_style {
+    cursor: default;
+}
