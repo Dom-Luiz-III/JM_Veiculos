@@ -26,14 +26,20 @@ SECRET_KEY = 'django-insecure-+0u+bi7it_2zdayl*cdzoa&l*idbjuaij!hipn#c3^v%sojz2s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+# Para abrir o projeto pela IDE você deixa esse ativado
 ALLOWED_HOSTS = []
+
+# Para hospedar o site pelo pythonanywhere é necessário ativar esse comando
+# ALLOWED_HOSTS = ['luizhenrique.pythonanywhere.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'django_adminlte',
-    'django_adminlte_theme',
+    # Esse comando abaixo customiza a página admin para que ele fique visualmente mais agradável, porém ele não está adaptdado para smartphones
+    #'django_adminlte_theme',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -64,7 +70,7 @@ ROOT_URLCONF = 'concessionaria.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['JM_Veiculos/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,9 +131,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_URL = 'static/'
+
+# Diretório onde os arquivos estáticos coletados serão armazenados
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Diretórios onde o Django deve procurar por arquivos estáticos
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'core/static'),
+]
+
+# default static files settings for PythonAnywhere.
+# see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
+MEDIA_ROOT = '/home/luizhenrique/JM_Veiculos/media'
+MEDIA_URL = '/media/'
+# STATIC_ROOT = '/home/luizhenrique/JM_Veiculos/static'
+STATIC_URL = '/static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
