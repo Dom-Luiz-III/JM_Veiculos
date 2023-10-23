@@ -8,7 +8,10 @@ Aproveitando o projetor anterior JM_Veículos, foi feito uma segunda avaliação
 Além desse, o projeto JM Veículos também será utilizado para a realização em testes de sistemas e outros requisitos pedidos pelo professor Yanes.
 
 ---
-# Prints do Projeto:
+
+<details>
+  <summary> <b> Prints do Projeto </b> </summary>
+<p>
 
 Página inicial, onde é possível ver detalhes da empresa, entrar em contato e criar um cadastro de cliente:
 
@@ -33,6 +36,9 @@ Página do administrador:
 Página onde é possível adicionar, editar e excluir carros a venda ou vendidos:
 
 ![Web 6](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/core/static/images/print5.png)
+
+</p>
+</details>
 
 ---
 # Tecnologias que foram utilizadas
