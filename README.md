@@ -3,8 +3,9 @@
 
 ---
 ## Descrição:
-Aproveitando o projetor anterior JM_Veículos, foi feito uma segunda avaliação em grupo pelo professor Ivanilldo que precisa atender outros requisitos para o projeto.
-Além desse, o projeto JM Veículos também será utilizado para a realização em testes de sistemas e outros requisitos pedidos pelo professor Yanes.
+Construído sobre a base do projeto anterior, Concessionaria_Website, o GM Veículos representa uma segunda etapa do desenvolvimento. Esta fase do projeto foi submetida a uma avaliação detalhada em grupo, com a orientação do professor Ivanilldo no SENAI, que exigiu a incorporação de novos requisitos e funcionalidades.
+
+Além de expandir e aprimorar o que foi realizado no Concessionaria_Website, o GM Veículos agora desempenha um papel fundamental em testes de sistemas e na satisfação de requisitos adicionais estabelecidos pelo professor Yanes na matéria de Teste de Sistemas. Essa evolução visa atender às necessidades crescentes e às expectativas cada vez mais altas do ambiente acadêmico e profissional.
 
 ---
 
