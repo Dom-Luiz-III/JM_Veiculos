@@ -245,6 +245,54 @@
             });
           });
         </script>
+
+        <!-- Comando JavaScript para fazer tratamento de exceções -->
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('#contato-form').addEventListener('submit', function (e) {
+              e.preventDefault();
+
+              // Verificar o campo de telefone
+              const telefone = document.querySelector('#telefone').value;
+              if (!/^\d+$/.test(telefone)) {
+                alert('Por favor, insira um número de telefone válido.');
+                return; // Impedir o envio do formulário
+              }
+
+              // Verificar o campo de e-mail
+              const email = document.querySelector('#email').value;
+              if (!isEmailValid(email)) {
+                alert('Por favor, insira um endereço de e-mail válido em letras minúsculas.');
+                return; // Impedir o envio do formulário
+              }
+
+              const formData = new FormData(this);
+
+              fetch('/contato/', {
+                method: 'POST',
+                body: formData,
+              })
+                .then(response => {
+                  if (response.ok) {
+                    document.querySelector('#success-message').style.display = 'block';
+                    document.querySelector('#contato-form').reset();
+                  } else {
+                    console.error('Erro no envio do formulário');
+                  }
+                })
+                .catch(error => {
+                  console.error('Erro no envio do formulário:', error);
+                });
+            });
+          });
+
+          // Função para verificar se o e-mail é válido (letras minúsculas)
+          function isEmailValid(email) {
+            return email.split('@').length === 2 && email === email.toLowerCase();
+          }
+        </script>
+
+
       </div>
     </div>
   </main>
