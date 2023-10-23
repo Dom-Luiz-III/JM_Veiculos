@@ -1,4 +1,4 @@
-# Projeto de Website Completo: JM Veículos
+# Projeto de Website Completo: GM Veículos
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/LICENSE) 
 
 ---
