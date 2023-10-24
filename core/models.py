@@ -21,19 +21,20 @@ class Carro(models.Model):
 
     def __str__(self):
         return self.modelo
-    
+
+    # Comando para mostrar uma miniatura da imagem no admin do Django. 
+    # Se a imagem existir, ela será exibida. Caso contrário, a imagem padrão sem_foto.jpg será exibida:
     def foto_tag(self):
         if self.foto:
             return mark_safe('<img src="{}" width="50" height="50" />'.format(self.foto.url))
         else:
-            # Caminho para a imagem padrão no local correto
             default_image_path = 'core/images/sem_foto.jpg'
             return mark_safe('<img src="{}" width="50" height="50" />'.format(default_image_path))
 
     foto_tag.short_description = 'Imagem'
 
+    # Verifica se a foto está em branco e, se estiver, atribui o caminho da imagem padrão
     def save(self, *args, **kwargs):
-        # Verifica se a foto está em branco e, se estiver, atribui o caminho da imagem padrão
         if not self.foto:
             self.foto = 'carros/sem_foto.jpg'
 
@@ -57,19 +58,20 @@ class Moto(models.Model):
 
     def __str__(self):
         return self.modelo
-    
+
+    # Comando para mostrar uma miniatura da imagem no admin do Django. 
+    # Se a imagem existir, ela será exibida. Caso contrário, a imagem padrão sem_foto.jpg será exibida:
     def foto_tag(self):
         if self.foto:
             return mark_safe('<img src="{}" width="50" height="50" />'.format(self.foto.url))
         else:
-            # Caminho para a imagem padrão no local correto
             default_image_path = 'core/images/sem_foto.jpg'
             return mark_safe('<img src="{}" width="50" height="50" />'.format(default_image_path))
 
     foto_tag.short_description = 'Imagem'
 
+    # Verifica se a foto está em branco e, se estiver, atribui o caminho da imagem padrão
     def save(self, *args, **kwargs):
-        # Verifica se a foto está em branco e, se estiver, atribui o caminho da imagem padrão
         if not self.foto:
             self.foto = 'motos/sem_foto.jpg'
 
@@ -94,19 +96,20 @@ class Utilitarios(models.Model):
 
     def __str__(self):
         return self.modelo
-    
+
+    # Comando para mostrar uma miniatura da imagem no admin do Django. 
+    # Se a imagem existir, ela será exibida. Caso contrário, a imagem padrão sem_foto.jpg será exibida:
     def foto_tag(self):
         if self.foto:
             return mark_safe('<img src="{}" width="50" height="50" />'.format(self.foto.url))
         else:
-            # Caminho para a imagem padrão no local correto
             default_image_path = 'core/images/sem_foto.jpg'
             return mark_safe('<img src="{}" width="50" height="50" />'.format(default_image_path))
 
     foto_tag.short_description = 'Imagem'
 
+    # Verifica se a foto está em branco e, se estiver, atribui o caminho da imagem padrão
     def save(self, *args, **kwargs):
-        # Verifica se a foto está em branco e, se estiver, atribui o caminho da imagem padrão
         if not self.foto:
             self.foto = 'utilitarios/sem_foto.jpg'
 
