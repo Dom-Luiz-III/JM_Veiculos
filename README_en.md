@@ -1,4 +1,4 @@
-Switch to [Portuguese](README.md)
+Trocar para o [Português](README.md)
 
 # Complete Website Project: GM Veículos
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Dom-Luiz-III/JM_Veiculos/blob/main/LICENSE) 
