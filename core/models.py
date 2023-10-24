@@ -1,4 +1,6 @@
 from django.db import models
+from django.utils.html import format_html
+from django.utils.safestring import mark_safe
 
 
 class Carro(models.Model):
@@ -19,6 +21,23 @@ class Carro(models.Model):
 
     def __str__(self):
         return self.modelo
+    
+    def foto_tag(self):
+        if self.foto:
+            return mark_safe('<img src="{}" width="50" height="50" />'.format(self.foto.url))
+        else:
+            # Caminho para a imagem padrão no local correto
+            default_image_path = 'core/images/sem_foto.jpg'
+            return mark_safe('<img src="{}" width="50" height="50" />'.format(default_image_path))
+
+    foto_tag.short_description = 'Imagem'
+
+    def save(self, *args, **kwargs):
+        # Verifica se a foto está em branco e, se estiver, atribui o caminho da imagem padrão
+        if not self.foto:
+            self.foto = 'carros/sem_foto.jpg'
+
+        super(Carro, self).save(*args, **kwargs)
 
 
 class Moto(models.Model):
@@ -38,6 +57,23 @@ class Moto(models.Model):
 
     def __str__(self):
         return self.modelo
+    
+    def foto_tag(self):
+        if self.foto:
+            return mark_safe('<img src="{}" width="50" height="50" />'.format(self.foto.url))
+        else:
+            # Caminho para a imagem padrão no local correto
+            default_image_path = 'core/images/sem_foto.jpg'
+            return mark_safe('<img src="{}" width="50" height="50" />'.format(default_image_path))
+
+    foto_tag.short_description = 'Imagem'
+
+    def save(self, *args, **kwargs):
+        # Verifica se a foto está em branco e, se estiver, atribui o caminho da imagem padrão
+        if not self.foto:
+            self.foto = 'motos/sem_foto.jpg'
+
+        super(Moto, self).save(*args, **kwargs)
 
 
 class Utilitarios(models.Model):
@@ -58,6 +94,23 @@ class Utilitarios(models.Model):
 
     def __str__(self):
         return self.modelo
+    
+    def foto_tag(self):
+        if self.foto:
+            return mark_safe('<img src="{}" width="50" height="50" />'.format(self.foto.url))
+        else:
+            # Caminho para a imagem padrão no local correto
+            default_image_path = 'core/images/sem_foto.jpg'
+            return mark_safe('<img src="{}" width="50" height="50" />'.format(default_image_path))
+
+    foto_tag.short_description = 'Imagem'
+
+    def save(self, *args, **kwargs):
+        # Verifica se a foto está em branco e, se estiver, atribui o caminho da imagem padrão
+        if not self.foto:
+            self.foto = 'utilitarios/sem_foto.jpg'
+
+        super(Utilitarios, self).save(*args, **kwargs)
 
 
 class Contato(models.Model):

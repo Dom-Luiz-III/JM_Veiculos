@@ -131,22 +131,25 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# STATIC_URL = 'static/'
 
-# Diretório onde os arquivos estáticos coletados serão armazenados
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# Desative essas configurações caso as use no PythonAnywhere:
+STATIC_URL = 'static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Diretórios onde o Django deve procurar por arquivos estáticos
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'core/static'),
 ]
 
+MEDIA_URL = '/media/'
+
+# Ative essas configurações caso as use no PythonAnywhere:
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/luizhenrique/JM_Veiculos/media'
-MEDIA_URL = '/media/'
-# STATIC_ROOT = '/home/luizhenrique/JM_Veiculos/static'
-STATIC_URL = '/static/'
+# MEDIA_ROOT = '/home/luizhenrique/JM_Veiculos/media'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_URL = '/static/'
 
 
 # Default primary key field type
