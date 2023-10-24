@@ -51,7 +51,7 @@ Page where you can add, edit, and delete cars for sale or sold:
 - Pillow for image handling
 - Django for CRUD, integration, and website creation
 - Bootstrap as Front End framework
-- A little bit of JavaScript for project details
+- A little bit of JavaScript for project details and exceptions
 - SQLite as the Database language
 - Selenium for system testing
 
