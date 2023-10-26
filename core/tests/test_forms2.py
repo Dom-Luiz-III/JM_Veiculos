@@ -4,7 +4,7 @@ import time
 
 driver = webdriver.Chrome()
 
-form_url = "http://127.0.0.1:8000/"
+form_url = "https://luizhenrique.pythonanywhere.com/"
 
 try:
     driver.get(form_url)

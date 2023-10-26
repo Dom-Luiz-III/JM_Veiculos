@@ -15,7 +15,7 @@ os.environ['PATH'] += ';' + edge_driver_path
 
 driver = webdriver.Edge()
 
-form_url = "http://127.0.0.1:8000/"
+form_url = "https://luizhenrique.pythonanywhere.com/"
 
 try:
     driver.get(form_url)
