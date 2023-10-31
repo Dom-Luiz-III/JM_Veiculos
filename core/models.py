@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.html import format_html
 from django.utils.safestring import mark_safe
-from .validators import validate_placa
+from .validators import validate_placa, validate_placa_unica
 
 
 class Carro(models.Model):
@@ -16,7 +16,7 @@ class Carro(models.Model):
                                         ('vista', 'A Vista'), ('parcelado', 'Parcelado'), ('consorcio', 'Consórcio')])
     situacao = models.CharField('Situação', max_length=20, choices=[
                                 ('venda', 'A Venda'), ('vendido', 'Vendido')])
-    placa = models.CharField('Placa', max_length=7, validators=[validate_placa])
+    placa = models.CharField('Placa', max_length=7, validators=[validate_placa, validate_placa_unica])
     foto = models.ImageField(
         'Foto', upload_to='carros/', null=True, blank=True)
 
@@ -54,7 +54,7 @@ class Moto(models.Model):
                                         ('vista', 'A Vista'), ('parcelado', 'Parcelado'), ('consorcio', 'Consórcio')])
     situacao = models.CharField('Situação', max_length=20, choices=[
                                 ('venda', 'A Venda'), ('vendido', 'Vendido')])
-    placa = models.CharField('Placa', max_length=7, validators=[validate_placa])
+    placa = models.CharField('Placa', max_length=7, validators=[validate_placa, validate_placa_unica])
     foto = models.ImageField('Foto', upload_to='motos/', null=True, blank=True)
 
     def __str__(self):
@@ -91,7 +91,7 @@ class Utilitarios(models.Model):
                                         ('vista', 'A Vista'), ('parcelado', 'Parcelado'), ('consorcio', 'Consórcio')])
     situacao = models.CharField('Situação', max_length=20, choices=[
                                 ('venda', 'A Venda'), ('vendido', 'Vendido')])
-    placa = models.CharField('Placa', max_length=7, validators=[validate_placa])
+    placa = models.CharField('Placa', max_length=7, validators=[validate_placa, validate_placa_unica])
     foto = models.ImageField(
         'Foto', upload_to='utilitarios/', null=True, blank=True)
 
