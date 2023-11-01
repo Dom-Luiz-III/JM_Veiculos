@@ -51,7 +51,7 @@ Página onde é possível adicionar, editar e excluir carros a venda ou vendidos
 - Pillow para adição de imagens
 - Django para CRUD, integração e criação de sites
 - Bootstrap como framework Front End
-- Um pouquinho de JavaScript para detalhes do projeto e exceções
+- JavaScript para detalhes do site e exceções
 - SQlite como linguagem de Banco de Dados
 - Selenium para teste de sistemas
 
