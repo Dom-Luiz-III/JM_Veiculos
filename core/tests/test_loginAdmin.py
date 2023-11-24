@@ -10,32 +10,52 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
+
 class TestLoginAdmin():
-  def setup_method(self, method):
-    self.driver = webdriver.Chrome()
-    self.vars = {}
-  
-  def teardown_method(self, method):
-    self.driver.quit()
-  
-  def test_loginAdmin(self):
-    self.driver.get("https://luizhenrique.pythonanywhere.com/home")
-    self.driver.set_window_size(1382, 784)
-    self.driver.find_element(By.CSS_SELECTOR, ".titulo:nth-child(1)").click()
-    self.driver.find_element(By.ID, "id_username").send_keys("vini")
-    self.driver.find_element(By.ID, "id_password").click()
-    self.driver.find_element(By.ID, "id_password").send_keys("vini")
-    self.driver.find_element(By.CSS_SELECTOR, ".submit-row > input").click()
-    self.driver.find_element(By.ID, "id_username").click()
-    self.driver.find_element(By.ID, "id_username").click()
-    element = self.driver.find_element(By.ID, "id_username")
-    actions = ActionChains(self.driver)
-    actions.double_click(element).perform()
-    self.driver.find_element(By.ID, "id_username").click()
-    self.driver.find_element(By.ID, "id_username").send_keys("luiz")
-    self.driver.find_element(By.ID, "id_password").click()
-    self.driver.find_element(By.ID, "id_password").send_keys("luiz")
-    self.driver.find_element(By.CSS_SELECTOR, ".submit-row > input").click()
-    self.driver.find_element(By.CSS_SELECTOR, "a:nth-child(4)").click()
-    self.driver.close()
-  
+    def setup_method(self, method):
+        self.driver = webdriver.Chrome()
+        self.vars = {}
+
+    def teardown_method(self, method):
+        self.driver.quit()
+
+    def test_loginAdmin(self):
+        self.driver.get("https://luizhenrique.pythonanywhere.com/home")
+        self.driver.set_window_size(1382, 784)
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.find_element(By.CSS_SELECTOR, ".titulo:nth-child(1)").click()
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.find_element(By.ID, "id_username").send_keys("vini")
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.find_element(By.ID, "id_password").click()
+        self.driver.find_element(By.ID, "id_password").send_keys("vini")
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.find_element(By.CSS_SELECTOR, ".submit-row > input").click()
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.find_element(By.ID, "id_username").click()
+        self.driver.find_element(By.ID, "id_username").click()
+        element = self.driver.find_element(By.ID, "id_username")
+        actions = ActionChains(self.driver)
+        actions.double_click(element).perform()
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.find_element(By.ID, "id_username").click()
+        self.driver.find_element(By.ID, "id_username").send_keys("luiz")
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.find_element(By.ID, "id_password").click()
+        self.driver.find_element(By.ID, "id_password").send_keys("luiz")
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.find_element(By.CSS_SELECTOR, ".submit-row > input").click()
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.find_element(By.CSS_SELECTOR, "a:nth-child(4)").click()
+        time.sleep(3)  # Adiciona uma pausa de 3 segundos
+
+        self.driver.close()
