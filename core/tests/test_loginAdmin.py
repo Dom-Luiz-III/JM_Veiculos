@@ -44,7 +44,6 @@ class TestLoginAdmin():
         actions.double_click(element).perform()
         time.sleep(3)  # Adiciona uma pausa de 3 segundos
 
-        self.driver.find_element(By.ID, "id_username").click()
         self.driver.find_element(By.ID, "id_username").send_keys("luiz")
         time.sleep(3)  # Adiciona uma pausa de 3 segundos
 
