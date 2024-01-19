@@ -37,7 +37,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django_adminlte',
+    #'django_adminlte',
     # Esse comando abaixo customiza a página admin para que ele fique visualmente mais agradável, porém ele não está adaptdado para smartphones
     #'django_adminlte_theme',
     'django.contrib.admin',
